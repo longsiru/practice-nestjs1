@@ -2,9 +2,14 @@
 //service基于class，class 有功能，
 import { Injectable } from '@nestjs/common';
 
+//在service这里可以看到另一个class，其中包含简单的gethell函数。
 @Injectable()
 export class AppService {
   getHello(): string {
     return 'Hello Nest!';
+  }
+
+  getHi(): string {
+    return 'hello everyone!';
   }
 }
